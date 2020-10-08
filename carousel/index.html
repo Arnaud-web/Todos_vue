@@ -1,0 +1,116 @@
+<meta charset="utf8" >
+<link rel="stylesheet" href="bootstrap.css">
+
+<style>
+	
+	.carousel {
+		position: relative;
+		overflow: hidden;
+	}
+	.carousel__nav {
+		position: absolute;
+		top: 50%;
+		left : 10px;
+		width: 63px;
+		height: 63px;
+	}
+	.carousel__nav.carousel__next {
+		right: 10px;
+		left: auto;
+	}
+
+
+	.carousel__pagination {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.carousel__pagination button {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: #000;
+		opacity: 0.8;
+		border-radius: 10px;
+	}
+	.carousel__pagination button.active{
+		background-color: aliceblue;
+	}
+
+
+
+		.slide-right-enter-active{
+			animation: slideRightIn 5s;
+		}
+		.slide-right-leave-active{
+			animation: slideRightOut 5s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+		@keyframes slideRightIn{
+			from {
+				transform: translateX(100%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+		@keyframes slideRightOut{
+			from {
+				transform:  translateX(0);
+			}
+			to {
+				transform: translateX(-100%);
+			}
+		}
+		.slide-left-enter-active{
+			animation: slideLeftIn 5s;
+		}
+		.slide-left-leave-active{
+			animation: slideLeftOut 5s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+		@keyframes slideLeftOut{
+			from {
+				transform: translateX(-100%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+		@keyframes slideLeftOut{
+			from {
+				transform:  translateX(0);
+			}
+			to {
+				transform: translateX(100%);
+			}
+		}
+
+
+
+
+</style>
+<body class="b" >
+
+<div id = "app" >
+	
+</div>
+
+</body>
+
+
+<script src = "vue.js" >  </script>
+<script src = "vue-resource.js" >  </script>
+<script src = "script.js" >  </script>
+

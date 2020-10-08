@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.lightbox__image{
+    position: fixed;
+}
+
+.lightbox__close{
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    top: 20px;
+    height: 50px;
+    background-color: burlywood;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.lightbox__close:hover{
+    transform: scale(1.2);
+}
+
+.lightbox__loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: #444;
+    background-color: rgba(#000, 0.5);
+    border-radius: 40px;
+    align-content: center;
+
+}
+.x{
+    padding-top: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: seashell; 
+    border-radius: 20px;
+}
+
+.but {
+    position: fixed;
+    top : 50%;
+    width: 50px;
+    height: 90px;
+    margin-top: -40px;
+    background-color: slategrey;
+    transition: transform 0.3s ;
+    cursor: pointer;
+}
+
+.but:hover{
+    transform: scale(1.2);
+
+}
+
+.lightbox__next{
+    right: 20px;
+}
+.lightbox__prev{
+    left: 20px;
+}
+
+.lightbox-fade-enter-active, .lightbox-fade-leave-active {
+    transition: opacity 0.3s ;
+}
+
+.lightbox-fade-enter, .lightbox-fade-leave-active {
+    opacity:0 ;
+}
+
+.lightbox-next-enter-active, .lightbox-next-leave-active{
+    transition: transform 0.5s;
+    transition:  opacity 0.5s ;
+}
+.lightbox-next-enter-active{
+    transition-delay: 0.3s;
+}
+.lightbox-next-enter{
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.lightbox-next-leave-active{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+
+
+
+
+
+.lightbox-prev-enter-active, .lightbox-prev-leave-active{
+    transition: transform 0.5s;
+    transition:  opacity 0.5s ;
+}
+.lightbox-prev-enter-active{
+    transition-delay: 0.3s;
+}
+.lightbox-prev-enter{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.lightbox-prev-leave-active{
+    opacity: 0;
+    transform: translateX(100px);
+}

@@ -1,0 +1,66 @@
+.svg_d{
+    width : 15px;
+}
+#select_all {
+    color : gray;
+}
+.todo.completed label{
+    color : red;
+     text-decoration: line-through;
+}
+.todo .edit{
+    display : none
+}
+.todo.editing div{
+    display : none
+}
+.todo.editing input{
+    display : block
+}
+
+.del {
+        border-radius: 50%;
+        margin: 2px;
+        font-size : 11px;
+        color : red;
+        border : 1px solid gray;
+
+}
+.notification {
+    
+        border-radius: 50% ;
+        
+        width: 20px;
+        height: 20px;
+        align-content: center;
+      display: inline-block;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        background-image: none;
+        border: 1px solid white;
+} 
+.todo_body {
+    max-width : 500px;
+    border : 2px solid gray;
+    padding : 10px;
+    margin : 2px;
+}
+.todo_liste{
+    font-size: 12px;
+    text-align: left;
+} .footer{
+    text-align : center;
+}
+.footer .active{
+    background-color : #6699ff;
+    color : white;
+    font-style : bold;
+}

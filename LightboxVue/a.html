@@ -1,0 +1,58 @@
+<meta charset="utf8" >
+ <link rel="stylesheet" href="bootstrap.css">
+ 
+<body>
+	<div id = "app" >
+
+		<nav class="navbar navbar-default navbar-top" id = "nav" >
+			<div class="container-fluid">
+			  <div class="navbar-header" >
+			  </div>
+			  
+			  <div class="navbar-header">
+				<a class="navbar-brand" href=""> </a>
+				<a class="navbar-brand" href="">My Site</a>
+			  </div>	
+			  <ul class="nav navbar-nav">
+				<li v-bind:class="{ active: home.isActive }"><a href="" @click = "homes" >Home</a></li>
+				 <li v-bind:class="{ active: message.isActive }" ><a href="" @click = "messages" >Message</a></li> 
+				
+			  </ul>	
+			  <!-- <ul style="  -webkit-margin-bottom-collapse: 400px;" class="nav navbar-nav ">
+				  <li ><a href="index.php">Les routes du ciel, notre métier...</a></li>
+			  </ul> -->
+			  <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;" >
+				   
+				<li>
+				  <form action="recherche.php" method="POST" accept-charset="utf-8"  class="form-inline mt-2 mt-md-0" style="padding-right: 90px;">
+					<input type="text" name="serch" placeholder="recherche" class="form-control mr-sm-2" required>
+					<input   type="submit" name="" value="rechercher" class="btn btn-primary my-2 my-sm-0" >
+				  </form>
+				</li>
+			   
+			</ul>
+		  </div>
+		</nav>
+
+		<div class="container" style=" background-color: #ffffff">
+
+			<div v-if	 = "home.isActive">
+			 <div >
+					<afficher></afficher>
+					<afficher></afficher>
+					<afficher></afficher>
+						
+				</div>
+				
+			</div>
+			<div id = "home" v-if	 = "home.isActive" >
+				<p>Trt estarngv dfjadbvhdfvd hbakhvbk</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+<script src = "vue.js" >  </script>
+<script src = "script.js" >  </script>
